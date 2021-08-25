@@ -11,4 +11,3 @@ export default function App() {
 }
 
 //this will have the routing to all my components
-sdsd
