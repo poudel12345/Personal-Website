@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet, HelmetProvider } from 'reat-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 //all the imports for the index page
 import Analytics from '../components/template/Analytics';

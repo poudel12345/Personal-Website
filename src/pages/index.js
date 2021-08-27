@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+//importing the main layout for the page that has 4 elemets.
+//Right now only the sidebar component is ready
+import Main from '../layouts/Main';
+
 //have to import the main layout to facilitate the website
 
 const Index = () => (
