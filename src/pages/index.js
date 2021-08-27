@@ -17,7 +17,7 @@ const Index = () => (
       <header>
         <div className="title">
           <h2 data-testid="heading"> </h2>
-          //post a link to a about me site
+          {/* //post a link to a about me site */}
           <p>A responsible, fast and stylish website using react.js.</p>
         </div>
       </header>
