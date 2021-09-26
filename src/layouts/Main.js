@@ -4,10 +4,9 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 //all the imports for the index page
 //import Analytics from '../components/template/Analytics';
-//import Navigation from '../components/template/Navigation';
 import SideBar from '../components/template/SideBar';
 //import ScrollToTop from '../components/template/ScrollToTop';
-
+import Nav from '../components/navbar/nav';
 const Main = props => (
   <HelmetProvider>
     {/* <Analytics />
@@ -24,9 +23,13 @@ const Main = props => (
       {props.title && <title> {props.title} </title>}
       <meta name="description" content={props.description} />
     </Helmet>
+    <div>
+       <Nav></Nav>
+    </div>
     <div id="wrapper">
       {/* //using the navigation component
       <Navigation /> */}
+
       <div id="main">{props.children}</div>
       {props.fullpage ? null : <SideBar />}
 
@@ -34,6 +37,7 @@ const Main = props => (
       is not used or we are going to the next page within the site*/}
     </div>
   </HelmetProvider>
+
 );
 
 //defining the proptypes and also the default proptypes

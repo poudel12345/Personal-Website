@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const { PUBLIC_URL } = process.env; // set automatically
 
 const SideBar = () => (
-  <section id="sideaber">
+  <section id="sidebar">
     <section id="intro">
       {/*
       //insert an image link with your photo
@@ -34,17 +34,14 @@ const SideBar = () => (
       //here we will insert some links to the other pages of the website
       <ul className="actions">
         <li>
-          /*
-          {!window.location.pathname.includes('/resume') ? (
+
             <Link to="/resume" className="button">
               Learn More
             </Link>
-          ) : (
+
             <Link to="/about" className="button">
               About Me
             </Link>
-          )}
-          */
         </li>
       </ul>
     </section>

@@ -1,3 +1,11 @@
 /*import all the css files in the main file */
 
 @import 'components/blurb';
+@import 'components/sidebar';
+@import  'components/nav';
+
+
+
+
+//importing all the css from the layout folder created for css
+@import 'layout/header';
