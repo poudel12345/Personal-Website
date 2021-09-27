@@ -1,21 +1,36 @@
 #nav{
+  position: fixed;
+  top: 0;
   width:100%;
   float: left;
-  margin: 0 0 3em 0;
-  padding: 0;
+  margin: 0 0 10em 0;
   list-style:none;
-  background-color: green;
-  border-botton: 1px solid #ccc;
-  border-top: 1px solid #ccc;
+  background-color: ghostwhite;
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  padding: 10px 10px 10px 10px;
 }
 #nav li{
   float: left;
 }
 #nav li a {
+  position: relative;
   display: block;
   padding: 8px 15px;
   text-decoration: none;
-  font-weight: bold;
-  color: #069;
+  font-size: 0.8em;
+  color: black;
   border-right: 1px solid #ccc;
+}
+/*name on the nav bar*/
+#nameOnNav {
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding-right: 15px;
+}
+#navLinks{
+  font-family: "Monaco";
+  padding-top: 3px;
+  color: blue;
 }
