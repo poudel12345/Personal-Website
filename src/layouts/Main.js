@@ -3,38 +3,23 @@ import PropTypes from 'prop-types';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 //all the imports for the index page
-//import Analytics from '../components/template/Analytics';
 import SideBar from '../components/template/SideBar';
-//import ScrollToTop from '../components/template/ScrollToTop';
-import Nav from '../components/navbar/nav';
+import ScrollToTop from '../components/template/ScrollToTop';
+import Navigation from '../components/template/Navigation';
+
+
 const Main = props => (
   <HelmetProvider>
-    {/* <Analytics />
-    //using scrolltotop component //
-        Import analytics and scrolltotop component
-
-    <ScrollToTop />
-    */}
-    <Helmet
-      titleTemplate="%s | Praful Poudel"
-      deafaultTitle="Praful Poudel"
-      defer={false}
-    >
+    <Helmet titleTemplate="%s | Praful Poudel" deafaultTitle="Praful Poudel" defer={false}>
       {props.title && <title> {props.title} </title>}
       <meta name="description" content={props.description} />
     </Helmet>
-    <div>
-       <Nav></Nav>
-    </div>
+
     <div id="wrapper">
-      {/* //using the navigation component
-      <Navigation /> */}
-
-      <div id="main">{props.children}</div>
-      {props.fullpage ? null : <SideBar />}
-
-      {/*use the sidebar when the fullpoge
-      is not used or we are going to the next page within the site*/}
+      <Navigation />
+      <div id="main">{props.children}
+      </div>
+      {props.fullPage ? null : <SideBar />}
     </div>
   </HelmetProvider>
 
@@ -54,9 +39,9 @@ Main.propTypes = {
 //deafault props
 Main.deafultProps = {
   children: null,
-  fullpage: false,
+  fullPage: false,
   title: null,
-  description: 'Praful Poudel personal website.'
+  description: "Praful Poudel's personal website."
 };
 
 export default Main;

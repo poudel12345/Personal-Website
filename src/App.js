@@ -10,6 +10,12 @@ import './static/main.scss';
 const { PUBLIC_URL } = process.env; //need to learn more about this
 
 const Index = lazy(() => import('./pages/index'));
+const Contact = lazy(() => import ('./pages/Contact'));
+const About = lazy(() => import('./pages/About'));
+const Resume = lazy(() => import ('./pages/Resume'));
+const Stats = lazy(() => import('./pages/Stats'));
+const Projects= lazy(() => import('./pages/Projects'));
+
 //import other pages here
 
 const App = () => (
@@ -19,8 +25,21 @@ const App = () => (
       //falback for the lazy loading pages
       */}
       <Switch>
+      //index page
         <Route exact path="/" component={Index} />
         //import other componenets
+        <Route path="/contact" component={Contact} />
+        //import About component
+        <Route path ="/about" component = {About} />
+        //route the path to resume component
+        <Route path = "/resume" component ={Resume} />
+
+        //route the path to project coomponent
+        <Route path = "/projects" component = {Projects}/>
+
+        //import the Stat component
+        <Route path ="/stats" component = {Stats} />
+
       </Switch>
     </Suspense>
   </BrowserRouter>
