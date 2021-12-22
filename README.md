@@ -1,3 +1,5 @@
-# react-eqhypq
+# Personal Website
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-eqhypq)
+1. Personal Website to show some information about me. 
+2. Followed Michael D'Angelos design to build this site.
+3. Theme is Future Imperfect.
